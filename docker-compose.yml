@@ -8,4 +8,4 @@ services:
     entrypoint: [ "sleep", "infinity" ]
     restart: unless-stopped
     volumes:
-      - ./shared:/shared
+      - ~/coduck_data:/home/judge/coduck_data
