@@ -6,3 +6,6 @@ services:
     privileged: true
     container_name: coduck-grader
     entrypoint: [ "sleep", "infinity" ]
+    restart: unless-stopped
+    volumes:
+      - ./shared:/shared
